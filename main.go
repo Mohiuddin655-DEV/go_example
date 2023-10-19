@@ -4,25 +4,14 @@ import "fmt"
 
 func main() {
 
-	// Types of  assignment operators => =, +=, -+, *=, /=, %=
+	// Types of unary operators => ++, --
 
 	value := 0
 
-	value = 5
-	fmt.Println("Assignment operator (=)  : ", value)
+	value++
+	fmt.Println("Unary operator (++) : ", value)
 
-	value += 5
-	fmt.Println("Assignment operator (+=) : ", value)
+	value--
+	fmt.Println("Unary operator (--) : ", value)
 
-	value -= 5
-	fmt.Println("Assignment operator (-=) : ", value)
-
-	value *= 5
-	fmt.Println("Assignment operator (*=) : ", value)
-
-	value /= 5
-	fmt.Println("Assignment operator (/=) : ", value)
-
-	value %= 5
-	fmt.Println("Assignment operator (%=) : ", value)
 }
