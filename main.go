@@ -2,12 +2,9 @@ package main
 
 import "fmt"
 
-/*
- This is a multi-line comment
-*/
-
 func main() {
-
-	// This is a single line comment
-	fmt.Print("Hello World!")
+	fmt.Println("My name is Md. Mohi-Uddin.")
+	fmt.Println("I'm currently 23 years old.")
+	fmt.Println("I'm from Bangladesh.")
+	fmt.Println("I have got GPA 4.89 in SSC")
 }
