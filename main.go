@@ -3,8 +3,26 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("My name is Md. Mohi-Uddin.")
-	fmt.Println("I'm currently 23 years old.")
-	fmt.Println("I'm from Bangladesh.")
-	fmt.Println("I have got GPA 4.89 in SSC")
+
+	// Variable naming rules
+	// 1. Letters, digits, _
+	// 2. Keywords are not allowed as variable
+	// 3. Variable can not have space
+	// 4. Variable name can not start with digit
+
+	var firstName, lastName string
+	var country string
+	var age int
+	var gpa float32
+
+	firstName = "Md."
+	lastName = "Mohi-Uddin"
+	country = "Bangladesh"
+	age = 23
+	gpa = 4.89
+
+	fmt.Println("My name is ", firstName, " ", lastName, " .")
+	fmt.Println("I'm currently ", age, "years old")
+	fmt.Println("I'm from ", country)
+	fmt.Println("I have got GPA ", gpa, "in SSC")
 }
