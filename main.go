@@ -4,12 +4,12 @@ import "fmt"
 
 func main() {
 
-	// Variable declaration simplied mode
-	var firstName = "Md."
-	var lastName = "Mohi-Uddin"
-	var country = "Bangladesh"
-	var age = 23
-	var gpa = 4.89
+	// Variable declaration shortcut mode
+	firstName := "Md."
+	lastName := "Mohi-Uddin"
+	country := "Bangladesh"
+	age := 23
+	gpa := 4.89
 
 	fmt.Println("My name is ", firstName, " ", lastName, " .")
 	fmt.Println("I'm currently ", age, "years old")
