@@ -4,19 +4,14 @@ import "fmt"
 
 func main() {
 
-	// variable declaration
-	var number int
+	// variable declare and initialize
+	var message = "Hello World!"
 
-	fmt.Printf("Enter the number : ")
-	fmt.Scan(&number)
-
-	// types of number formatting
-	// 1. b for binary
-	// 2. o for octal
-	// 3. x for hexa
+	// types of string formatting
+	// 1. s for simple
+	// 2. q for qoute
 
 	// show output
-	fmt.Printf("Binary number = %b\n", number)
-	fmt.Printf("Octal  number = %o\n", number)
-	fmt.Printf("Hexa   number = %x\n", number)
+	fmt.Printf("Simple message = %s\n", message)
+	fmt.Printf("Quote  message = %q\n", message)
 }
