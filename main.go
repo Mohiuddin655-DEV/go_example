@@ -4,22 +4,12 @@ import "fmt"
 
 func main() {
 
-	// Variable naming rules
-	// 1. Letters, digits, _
-	// 2. Keywords are not allowed as variable
-	// 3. Variable can not have space
-	// 4. Variable name can not start with digit
-
-	var firstName, lastName string
-	var country string
-	var age int
-	var gpa float32
-
-	firstName = "Md."
-	lastName = "Mohi-Uddin"
-	country = "Bangladesh"
-	age = 23
-	gpa = 4.89
+	// Variable declaration root mode
+	var firstName string = "Md."
+	var lastName string = "Mohi-Uddin"
+	var country string = "Bangladesh"
+	var age int = 23
+	var gpa float32 = 4.89
 
 	fmt.Println("My name is ", firstName, " ", lastName, " .")
 	fmt.Println("I'm currently ", age, "years old")
