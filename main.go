@@ -4,15 +4,23 @@ import "fmt"
 
 func main() {
 
-	// Types of relational operators => >, <, ==, <=, >=, !=
+	// Types of logical operators => &&, ||, !
 
-	value := 5
+	// variable declaration
+	var input int
 
-	fmt.Println("Relational operator (>)  : ", value > 5)
-	fmt.Println("Relational operator (<)  : ", value < 5)
-	fmt.Println("Relational operator (==) : ", value == 5)
-	fmt.Println("Relational operator (>=) : ", value >= 5)
-	fmt.Println("Relational operator (<=) : ", value <= 5)
-	fmt.Println("Relational operator (!=) : ", value != 5)
+	// variable initialization
+	fmt.Print("Please enter the input number : ")
+	fmt.Scan(&input)
+
+	// use condition with logical operation
+	var isAllConditionIsValid = input < 5 && input > 0
+	var isAnyConditionIsValid = input < 5 || input > 0
+	var isConditionUnvalid = !isAllConditionIsValid
+
+	// show output
+	fmt.Println("Logical operator (&&)  : ", isAllConditionIsValid)
+	fmt.Println("Logical operator (||)  : ", isAnyConditionIsValid)
+	fmt.Println("Logical operator (!)   : ", isConditionUnvalid)
 
 }
