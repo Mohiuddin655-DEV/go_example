@@ -4,14 +4,15 @@ import "fmt"
 
 func main() {
 
-	// Types of unary operators => ++, --
+	// Types of relational operators => >, <, ==, <=, >=, !=
 
-	value := 0
+	value := 5
 
-	value++
-	fmt.Println("Unary operator (++) : ", value)
-
-	value--
-	fmt.Println("Unary operator (--) : ", value)
+	fmt.Println("Relational operator (>)  : ", value > 5)
+	fmt.Println("Relational operator (<)  : ", value < 5)
+	fmt.Println("Relational operator (==) : ", value == 5)
+	fmt.Println("Relational operator (>=) : ", value >= 5)
+	fmt.Println("Relational operator (<=) : ", value <= 5)
+	fmt.Println("Relational operator (!=) : ", value != 5)
 
 }
