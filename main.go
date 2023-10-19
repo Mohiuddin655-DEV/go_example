@@ -4,14 +4,19 @@ import "fmt"
 
 func main() {
 
-	// variable declare and initialize
-	var number = 3.1416
+	// variable declaration
+	var balance int
 
-	// types of string formatting
-	// 1. f for integer to float
-	// 2. .2f for floating point first 2 digits
+	// variable initialization
+	fmt.Printf("Enter the balance : ")
+	fmt.Scan(&balance)
 
-	// show output
-	fmt.Printf("Current value for floating type = %f\n", number)
-	fmt.Printf("Last two decimal value = %.2f\n", number)
+	// integer to floating 32 bit type casting
+	var floating32Balance = float32(balance)
+	fmt.Println("Floating 32 balance is : ", floating32Balance)
+
+	// integer to floating 64 bit type casting
+	var floating64Balance = float64(balance)
+	fmt.Println("Floating 64 balance is : ", floating64Balance)
+
 }
