@@ -56,6 +56,10 @@ func main() {
 		fmt.Printf("The number is eight.\n")
 	case 9:
 		fmt.Printf("The number is nine.\n")
+	case 10, 20, 30, 40, 50, 60, 70, 80, 90:
+		fmt.Printf("The number is getter than 9 and less than 100.\n")
+	case 100, 200, 300, 400, 500, 600, 700, 800, 900:
+		fmt.Printf("The number is getter than 99 and less than 1000.\n")
 	default:
 		fmt.Printf("The number is %v\n", number)
 	}
