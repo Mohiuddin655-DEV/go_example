@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	// Types of conditional statements => if, if-else, else-if
+	// Types of conditional statements => if, if-else, else-if, switch
 
 	// Variable declaration
 	var number int
@@ -32,6 +32,32 @@ func main() {
 		fmt.Println("The number is getter than 0 and less than 10!")
 	} else {
 		fmt.Printf("The entired number was %v\n", number)
+	}
+
+	// switch statement
+	switch number {
+	case 0:
+		fmt.Printf("The number is zero.\n")
+	case 1:
+		fmt.Printf("The number is one.\n")
+	case 2:
+		fmt.Printf("The number is two.\n")
+	case 3:
+		fmt.Printf("The number is three.\n")
+	case 4:
+		fmt.Printf("The number is four.\n")
+	case 5:
+		fmt.Printf("The number is five.\n")
+	case 6:
+		fmt.Printf("The number is six.\n")
+	case 7:
+		fmt.Printf("The number is seven.\n")
+	case 8:
+		fmt.Printf("The number is eight.\n")
+	case 9:
+		fmt.Printf("The number is nine.\n")
+	default:
+		fmt.Printf("The number is %v\n", number)
 	}
 
 }
