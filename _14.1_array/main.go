@@ -9,11 +9,11 @@ func main() {
 		"Bangladesh", "Pakistan", "Nepal", "Findland", "India",
 	}
 
-	// show output
-	fmt.Println(countries[0])
-	fmt.Println(countries[3])
+	// show single output
+	var country = countries[0]
+	fmt.Println(country)
 
-	// or, show output
+	// or, show multiple output
 	length := len(countries)
 	for i := 0; i < length; i++ {
 		fmt.Println(countries[i])
