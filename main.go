@@ -2,36 +2,67 @@ package main
 
 import "fmt"
 
-func main() {
-
-	// pointer value roles => &, *
-	// 1. & indicate the pointer value
-	// 2. * indicate the non-pointer value
-
-	// variable declaration and initialization
-	x := 10
-
-	// pointer value (&)
-	var p *int
-	p = &x
-
-	// non-pointer value (*)
-	var q = *p
-
-	// customize memory addressing value
-	*p = *p - 1
-
-	fmt.Printf("Simple value is           : %v\n", x)
-	fmt.Printf("Pointer value is          : %v\n", p)
-	fmt.Printf("Non-Pointer value is      : %v\n", q)
-	fmt.Printf("Customized value is       : %v\n", x)
-
-	// change value by reference
-	changeValueByReference(&x)
-	fmt.Printf("Change value by reference : %v\n", x)
-
+type Person struct {
+	name    string
+	age     int
+	country string
 }
 
-func changeValueByReference(reference *int) {
-	*reference = 80
+// struct wise method
+func (person *Person) updatePersonName(name string) {
+	person.name = name
+}
+
+// struct wise method
+func (person *Person) updatePersonAge(age int) {
+	person.age = age
+}
+
+// struct wise method
+func (person *Person) updatePersonCountry(country string) {
+	person.country = country
+}
+
+// struct wise method
+func (person *Person) showPersonInfo() {
+	fmt.Printf("Name : %v, Age : %v, Country : %v\n", person.name, person.age, person.country)
+}
+
+func main() {
+
+	person1 := Person{"Md. Mohi-Uddin", 23, "Bangladesh"}
+
+	person2 := Person{
+		"Omie Talukdar",
+		24,
+		"Bangladesh",
+	}
+
+	person3 := Person{
+		"Mohammad",
+		26,
+		"Soudi Arabia",
+	}
+
+	// call to create biograpy for both person data
+	createBio(person1)
+	createBio(person2)
+	createBio(person3)
+
+	// person 1 data update operation
+	person1.updatePersonName("Mr. Developer")
+	person1.updatePersonAge(24)
+	person1.updatePersonCountry("Palestine")
+
+	// show person1 updated data
+	person1.showPersonInfo()
+}
+
+func createBio(person Person) {
+
+	var name = person.name
+	var age = person.age
+	var country = person.country
+
+	fmt.Printf("My name is %v. I'm from %v. I'm currently %v\n", name, country, age)
 }

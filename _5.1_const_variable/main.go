@@ -10,12 +10,10 @@ func main() {
 
 	// const variable
 	const COUNTRY = "Bangladesh"
-
-	// variable declaration and initialization
-	firstName := "Md."
-	lastName := "Mohi-Uddin"
-	age := 23
-	gpa := 4.89
+	const firstName string = "Md."
+	const lastName string = "Mohi-Uddin"
+	const age int = 23
+	const gpa float32 = 4.89
 
 	// show output
 	fmt.Printf("My name is %v %v.\n", firstName, lastName)
